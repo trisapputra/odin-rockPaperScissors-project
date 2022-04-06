@@ -19,6 +19,11 @@ function computerPlay () {
 function playerWeapon () {
     return prompt("This is rock paper scisors game, choose your weapon !!")};
 
+
+
+
+    
+
 // compare computer selection and player selection
 
 let playerScore = 0;
