@@ -52,11 +52,11 @@ function playRound () {
 }
 
 
-playRound ();
-playRound ();
-playRound ();
-playRound ();
-playRound ();
+// playRound ();
+// playRound ();
+// playRound ();
+// playRound ();
+// playRound ();
 
 
 function matchScore () {
@@ -68,3 +68,4 @@ function matchScore () {
     }
 };
 
+matchScore();
