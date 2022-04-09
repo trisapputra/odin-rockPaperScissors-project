@@ -23,10 +23,11 @@ function playRound (e) {
 
 
     let computerSelection = computerPlay();
-
+  
 
     let playerSelection = e.target.className;
-    console.log(playerSelection)
+    console.log(scoreParagraph)
+    
 
     // if ( playerSelection === "rock" && computerSelection === "scissors" ) {
     //     playerScore++;
@@ -48,6 +49,12 @@ function playRound (e) {
 }
     const btns = document.querySelectorAll('button')
     btns.forEach(btn => btn.addEventListener('click', playRound));
+    const contScore = document.getElementById("contScore");
+ 
+    const scoreParagraph = document.createElement('p');
+//     document.getElementsByClassName("contScore").appendChild(scoreParagraph);
+// console.log(contScore);
+    contScore.appendChild(scoreParagraph);
 
 function matchScore () {
 
