@@ -26,22 +26,27 @@ function playRound (e) {
   
 
     let playerSelection = e.target.className;
-    console.log(scoreParagraph)
     
 
-    // if ( playerSelection === "rock" && computerSelection === "scissors" ) {
-    //     playerScore++;
-    // } else if ( playerSelection === "rock" && computerSelection === "paper" ) {
-    //     computerScore++;
-    // } else if ( playerSelection === "scissors" && computerSelection === "rock" ) {
-    //     computerScore++;
-    // } else if ( playerSelection === "scissors" && computerSelection === "paper" ) {
-    //     playerScore++;
-    // } else if ( playerSelection === "paper" && computerSelection === "rock" ) {
-    //     playerScore++;
-    // }else if ( playerSelection === "paper" && computerSelection === "scissors" ){
-    //     computerScore++;
-    // };
+    let playerScoreDisplay = document.getElementById("playerScore");
+    let compScoreDisplay = document.getElementById("compScore");
+    playerScoreDisplay.textContent = playerScore;
+    compScoreDisplay.textContent = computerScore
+    
+
+    if ( playerSelection === "rock" && computerSelection === "scissors" ) {
+        playerScore++;
+    } else if ( playerSelection === "rock" && computerSelection === "paper" ) {
+        computerScore++;
+    } else if ( playerSelection === "scissors" && computerSelection === "rock" ) {
+        computerScore++;
+    } else if ( playerSelection === "scissors" && computerSelection === "paper" ) {
+        playerScore++;
+    } else if ( playerSelection === "paper" && computerSelection === "rock" ) {
+        playerScore++;
+    }else if ( playerSelection === "paper" && computerSelection === "scissors" ){
+        computerScore++;
+    };
 
     // let  scoreBoard = playerScore + " " + ":" + " " + computerScore;
 
@@ -49,13 +54,7 @@ function playRound (e) {
 }
     const btns = document.querySelectorAll('button')
     btns.forEach(btn => btn.addEventListener('click', playRound));
-    const contScore = document.getElementById("contScore");
- 
-    const scoreParagraph = document.createElement('p');
-//     document.getElementsByClassName("contScore").appendChild(scoreParagraph);
-// console.log(contScore);
-    contScore.appendChild(scoreParagraph);
-
+  
 function matchScore () {
 
     if (playerScore > computerScore) {
