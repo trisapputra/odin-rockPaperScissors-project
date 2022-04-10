@@ -9,6 +9,11 @@
     border-radius: 5px;
 }
 
+.container h1{
+    color: slateblue;
+   
+}
+
 #contScore {
     display: flex;
     flex-direction: column;
