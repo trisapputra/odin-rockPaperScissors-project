@@ -23,16 +23,14 @@ function playRound (e) {
 
 
     let computerSelection = computerPlay();
-  
-
     let playerSelection = e.target.className;
     
+    if (playerScore == 5) {
+        alert("player win"); playerScore = 0; computerScore = 0;
+    } else if (computerScore == 5) {
+        alert("you lose"); playerScore = 0; computerScore = 0;
+    }
 
-    let playerScoreDisplay = document.getElementById("playerScore");
-    let compScoreDisplay = document.getElementById("compScore");
-    playerScoreDisplay.textContent = playerScore;
-    compScoreDisplay.textContent = computerScore
-    
 
     if ( playerSelection === "rock" && computerSelection === "scissors" ) {
         playerScore++;
@@ -47,6 +45,19 @@ function playRound (e) {
     }else if ( playerSelection === "paper" && computerSelection === "scissors" ){
         computerScore++;
     };
+
+
+    let playerScoreDisplay = document.getElementById("playerScore");
+    let compScoreDisplay = document.getElementById("compScore");
+    playerScoreDisplay.textContent = playerScore;
+    compScoreDisplay.textContent = computerScore;
+
+
+    // if (playerScore == 5 || computerScore == 5) {
+
+    // }
+
+    
 
     // let  scoreBoard = playerScore + " " + ":" + " " + computerScore;
 

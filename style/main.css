@@ -1,7 +1,10 @@
-.container {
-    display: flex;
 
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+.container {
+    background-color: peachpuff;
+    width: fit-content;
+    margin: auto;
+    font-family: "Helvetica", sans-serif;
+    border: solid 8px rgb(114, 87, 64);
+    padding: 8px 12px;
+    border-radius: 5px;
 }
