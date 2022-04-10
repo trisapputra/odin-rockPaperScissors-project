@@ -3,10 +3,25 @@
     background-color: skyblue;
     width: fit-content;
     margin: auto;
-    font-family: "Helvetica", sans-serif;
+    font-family: sans-serif;
     border: solid 8px slateblue;
     padding: 8px 12px;
     border-radius: 5px;
+}
+
+#contScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: slateblue;
+    
+}
+
+#contScore p {
+    font-size: 54px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .contBtn {
